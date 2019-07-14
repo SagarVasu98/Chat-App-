@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="manifest" href="manifest.json">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCshTJMiSSzazhy-7-ER_LBpyPukguRPjw",
+    authDomain: "messageapp-01.firebaseapp.com",
+    databaseURL: "https://messageapp-01.firebaseio.com",
+    projectId: "messageapp-01",
+    storageBucket: "",
+    messagingSenderId: "130101363202",
+    appId: "1:130101363202:web:8530e49fe6090f97"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</head>
+<body>
+<div class="container">
+  <form action="#">
+    <div class="row">
+      <div class="typewriter">
+        <h1>Login Now</h1>
+      </div>
+  <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+      
+
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username"  id="name" required>
+        <input type="password" name="password" placeholder="Password" id="password" required>
+        <input type="button" value="Login" onclick="login()">
+        
+      </div>
+      
+    </div>
+  </form>
+</div>
+
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:white" class="btn" onclick="signUp()" >Sign up</a>
+    </div>
+  </div>
+</div>
+
+</body>
+<script src="js/index.js"></script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="../css/home.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- Firebase  -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCshTJMiSSzazhy-7-ER_LBpyPukguRPjw",
+        authDomain: "messageapp-01.firebaseapp.com",
+        databaseURL: "https://messageapp-01.firebaseio.com",
+        projectId: "messageapp-01",
+        storageBucket: "",
+        messagingSenderId: "130101363202",
+        appId: "1:130101363202:web:8530e49fe6090f97"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+<body>
+
+    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+        <div class="w3-container sideMenu">
+            <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+            <br>
+            <div class="w3-padding w3-center">
+            </div>
+        </div>
+        <a class="w3-bar-item w3-button navLink" href="home.html">Home</a>
+        <!-- <a class="w3-bar-item w3-button navLink" href="#">Account</a> -->
+        <a class="w3-bar-item w3-button navLink" href="#" onclick="logout()">Logout</a>
+    </nav>
+
+    <header class="w3-top w3-bar navBar">
+        <button class="w3-bar-item  w3-xxlarge menuIcon " onclick="openSidebar()">&#9776;</button>
+        <h6 class="w3-bar-item" style="margin-top: 18px;">Message App</h6>
+    </header>
+
+    <div class="w3-container" style="margin-top:90px" id="main">
+
+    </div>
+
+    <footer class="w3-container w3-bottom footer w3-margin-top">
+        <h3>Footer</h3>
+    </footer>
+
+    <script>
+        closeSidebar();
+        function openSidebar() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function closeSidebar() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
+<script src="../js/home.js"></script>

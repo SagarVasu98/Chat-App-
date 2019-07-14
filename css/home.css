@@ -1,0 +1,29 @@
+body{
+  font-family: "Dosis", sans-serif;
+}
+
+.navBar{
+  background-color: #316DC3;
+  color: white;
+}
+.menuIcon{
+  background-color: #316DC3;
+  color: white;
+}
+
+.navLink:hover{
+  text-decoration: none;
+}
+
+.sideMenu{
+  background-color: #316DC3;
+  color: white;
+}
+
+
+/* footer */
+
+.footer{
+  background-color: #316DC3;
+  color: white;
+}
